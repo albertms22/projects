@@ -1,0 +1,11 @@
+[Interface]
+Address = 10.8.0.1/24
+ListenPort = 51820
+PrivateKey = <SERVER_PRIVATE_KEY>
+PostUp = ufw allow from 10.8.0.0/24 to any port 139,445; ufw deny 139/tcp; ufw deny 445/tcp
+PostDown = ufw delete allow from 10.8.0.0/24 to any port 139,445
+
+# Example peer
+[Peer]
+PublicKey = <CLIENT1_PUBLIC_KEY>
+AllowedIPs = 10.8.0.2/32

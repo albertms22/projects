@@ -1,0 +1,44 @@
+[global]
+   server role = standalone server
+   workgroup = WORKGROUP
+   security = user
+   map to guest = never
+
+   # Bind only to loopback and WireGuard interface
+   interfaces = 127.0.0.1/8 wg0
+   bind interfaces only = yes
+
+   # Harden SMB protocols – disable SMB1
+   client min protocol = SMB2
+   server min protocol = SMB2
+   smb encrypt = required
+
+   # Logging
+   log file = /var/log/samba/%m.log
+   max log size = 5000
+   logging = file
+
+   # Performance & sane defaults
+   load printers = no
+   printcap name = /dev/null
+   disable spoolss = yes
+
+[videos]
+   path = /srv/samba/videos
+   comment = Videos Library (Read-Only + Add)
+   browsable = yes
+   read only = no
+   valid users = @smbuser
+   force create mode = 0664
+   force directory mode = 2775
+   force group = smbuser
+
+[shared]
+   path = /srv/samba/shared
+   comment = Shared Files (Read-Write + Add)
+   browsable = yes
+   read only = no
+   valid users = @smbuser
+   force create mode = 0664
+   force directory mode = 2775
+   force group = smbuser
