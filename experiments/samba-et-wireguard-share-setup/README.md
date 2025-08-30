@@ -15,13 +15,13 @@ In addition to the script, the repository also includes ready-to-use configurati
 
 ## ⚠️ Disclaimer
 
-**Use the quick installation script at your own risk**. It modifies critical network and system configurations. It is highly recommended to:
+Use the quick installation script at your own risk. It modifies critical network and system configurations. It is highly recommended to:
 
-    1. **Read and understand the script ** (setup.sh) before running it.
+    1. Read and understand the script  (setup.sh) before running it.
 
-    2. **Run it on a fresh system or a virtual machine** first to test its behavior.
+    2. Run it on a fresh system or a virtual machine first to test its behavior.
 
-   3.  **Have backups** of any important data on your system.
+   3.  Have backups of any important data on your system.
 
 I am not responsible for any system instability, security breaches, or data loss resulting from the use of this script.
 
@@ -31,13 +31,13 @@ I am not responsible for any system instability, security breaches, or data loss
 
 Before running this script, ensure your system meets the following requirements:
 
-    **OS:** A Ubuntu or Debian-based Linux distribution (e.g., Ubuntu 20.04/22.04, Debian 11/12).
+    OS: A Ubuntu or Debian-based Linux distribution (e.g., Ubuntu 20.04/22.04, Debian 11/12).
 
-    **Permissions:** You must have sudo privileges to run the script.
+    Permissions: You must have sudo privileges to run the script.
 
-   **Internet Connection:** Required to download and install packages.
+   Internet Connection: Required to download and install packages.
 
-    **Static IP (Recommended):** For reliable Samba sharing, your server should have a static IP address on your local network.
+    Static IP (Recommended): For reliable Samba sharing, your server should have a static IP address on your local network.
     
 --------------------------------------------------------------------------------------------------
 
