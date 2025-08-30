@@ -41,5 +41,5 @@ Before running this script, ensure your system meets the following requirements:
     
 --------------------------------------------------------------------------------------------------
 
-##🛠️ Installation & Usage
+## 🛠️ Installation & Usage
 
