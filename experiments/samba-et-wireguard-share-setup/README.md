@@ -1,45 +1,59 @@
-# Samba & OpenVPN Auto-Setup Script
-
+# Samba & OpenVPN Setup Script
 --------------------------------------------------------------------------------------------------
 
 ## 📖 Overview
 
-This project provides a Bash script that automates the setup and configuration of:
-  - Samba → for local file sharing
-  - OpenVPN → for secure remote access
-It is designed for Ubuntu/Debian-based systems and aims to simplify a process that usually requires many manual steps.
-
-In addition to the script, the repository also includes ready-to-use configuration files. These are useful if you prefer to handle the installation and setup manually, without running the script.
+Automated setup scripts and sample configs for Samba file sharing and OpenVPN server on Linux.
 
 --------------------------------------------------------------------------------------------------
 
-## ⚠️ Disclaimer
+## ✨ Features
 
-Use the quick installation script at your own risk. It modifies critical network and system configurations. It is highly recommended to:
+ - Automates installation and setup of Samba and OpenVPN
 
-   1. Read and understand the script  (setup.sh) before running it.
+ - Includes example configuration files for customization
 
-   2. Run it on a fresh system or a virtual machine first to test its behavior.
-
-   3.  Have backups of any important data on your system.
-
-I am not responsible for any system instability, security breaches, or data loss resulting from the use of this script.
+ - Easy to extend or modify for your environment
 
 ----------------------------------------------------------------------------------------------------
 
-## 🚀 Pre-requisites
+## 🚀 Requirements
 
 Before running this script, ensure your system meets the following requirements:
+  - Linux (tested on Ubuntu 20.04)
 
-   OS: A Ubuntu or Debian-based Linux distribution (e.g., Ubuntu 20.04/22.04, Debian 11/12).
+  - Root privileges
 
-   Permissions: You must have sudo privileges to run the script.
-
-   Internet Connection: Required to download and install packages.
-
-   Static IP (Recommended): For reliable Samba sharing, your server should have a static IP address on your local network.
+  - Basic networking knowledge
     
 --------------------------------------------------------------------------------------------------
 
 ## 🛠️ Installation & Usage
+
+ - git clone https://github.com/yourusername/samba-openvpn-setup.git
+ - cd samba-openvpn-setup
+ - chmod +x setup.sh
+ - ./setup.sh
+
+--------------------------------------------------------------------------------------------------
+
+## ⚙️ Configuration
+For those who prefer a manual setup over using the automated script, follow these steps:
+
+ 1. Configure Samba:
+sudo cp configs/smb.conf.example /etc/samba/smb.conf
+# Edit the file to match your desired shares and settings
+sudo nano /etc/samba/smb.conf
+
+ 2. Configure OpenVPN:
+sudo cp configs/server.conf.example /etc/openvpn/server.conf
+# Edit the file to set your protocol, port, and network settings
+sudo nano /etc/openvpn/server.conf
+
+ 3. Restart the services to apply changes:
+sudo systemctl restart smbd nmbd
+sudo systemctl restart openvpn@server
+
+## 💻 Usage
+
 
