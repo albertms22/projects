@@ -31,7 +31,7 @@ I am not responsible for any system instability, security breaches, or data loss
 
 Before running this script, ensure your system meets the following requirements:
 
-    OS: A Ubuntu or Debian-based Linux distribution (e.g., Ubuntu 20.04/22.04, Debian 11/12).
+   OS: A Ubuntu or Debian-based Linux distribution (e.g., Ubuntu 20.04/22.04, Debian 11/12).
 
    Permissions: You must have sudo privileges to run the script.
 
