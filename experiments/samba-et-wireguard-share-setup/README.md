@@ -30,7 +30,7 @@ Before running this script, ensure your system meets the following requirements:
 
 ## 🛠️ Installation & Usage
 
- - git clone https://github.com/yourusername/samba-openvpn-setup.git
+ - git clone https://github.com/albertms22/samba-openvpn-setup.git
  - cd samba-openvpn-setup
  - chmod +x setup.sh
  - ./setup.sh
