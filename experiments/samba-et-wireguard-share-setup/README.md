@@ -17,9 +17,9 @@ In addition to the script, the repository also includes ready-to-use configurati
 
 Use the quick installation script at your own risk. It modifies critical network and system configurations. It is highly recommended to:
 
-    1. Read and understand the script  (setup.sh) before running it.
+   1. Read and understand the script  (setup.sh) before running it.
 
-    2. Run it on a fresh system or a virtual machine first to test its behavior.
+   2. Run it on a fresh system or a virtual machine first to test its behavior.
 
    3.  Have backups of any important data on your system.
 
