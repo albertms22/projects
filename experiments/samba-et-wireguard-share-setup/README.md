@@ -42,24 +42,24 @@ Before running this script, ensure your system meets the following requirements:
 For those who prefer a manual setup over using the automated script, follow these steps:
 1. Configure Samba
 
-sudo cp configs/smb.conf.example /etc/samba/smb.conf
+- sudo cp configs/smb.conf.example /etc/samba/smb.conf
 
 Edit the file to match your desired shares and settings:
 
-sudo nano /etc/samba/smb.conf
+- sudo nano /etc/samba/smb.conf
 
 2. Configure OpenVPN
 
-sudo cp configs/server.conf.example /etc/openvpn/server.conf
+- sudo cp configs/server.conf.example /etc/openvpn/server.conf
 
 Edit the file to set your protocol, port, and network settings:
 
-sudo nano /etc/openvpn/server.conf
+- sudo nano /etc/openvpn/server.conf
 
 3. Restart the services to apply changes
 
-sudo systemctl restart smbd nmbd
-sudo systemctl restart openvpn@server
+- sudo systemctl restart smbd nmbd
+- sudo systemctl restart openvpn@server
 
 ## 💻 Usage
 
